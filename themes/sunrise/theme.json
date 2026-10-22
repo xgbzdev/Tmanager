@@ -1,0 +1,22 @@
+{
+  "name": "Sunrise",
+  "author": "ThemeManager",
+  "colors": { "bg": "#2b1a1f", "fg": "#fff4e8", "accent": "#ff9f43", "card": "#3d262c" },
+  "fonts": [
+    { "family": "Sunrise Serif", "file": "SunriseSerif.woff" }
+  ],
+  "wallpapers": [
+    { "name": "Dawn", "file": "dawn.png" }
+  ],
+  "iconPacks": [
+    {
+      "name": "Sunrise icons",
+      "map": {
+        "Phone": "phone.png",
+        "Messages": "messages.png",
+        "Camera": "camera.png",
+        "Settings": "settings.png"
+      }
+    }
+  ]
+}

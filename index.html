@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>ThemeManager</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+  <!-- Step 1: permission gate. The main UI stays hidden until this passes. -->
+  <section id="gate" class="screen">
+    <h1>ThemeManager</h1>
+    <p class="lead">To restyle the system, this app needs elevated access. Review and allow it before continuing.</p>
+    <ul id="gate-list" class="checklist"></ul>
+    <p id="gate-note" class="note"></p>
+    <button id="gate-allow" class="primary">Allow &amp; Continue</button>
+    <button id="gate-deny" class="secondary">Not now</button>
+  </section>
+
+  <!-- Step 2: main UI -->
+  <section id="main" class="screen" hidden>
+    <header>
+      <h1>ThemeManager</h1>
+      <span id="active-name" class="badge">No theme</span>
+    </header>
+
+    <nav id="tabs">
+      <button data-tab="themes" class="on">Themes</button>
+      <button data-tab="fonts">Fonts</button>
+      <button data-tab="wallpapers">Wallpaper</button>
+      <button data-tab="icons">Icons</button>
+    </nav>
+
+    <div id="panel" class="panel"></div>
+
+    <footer>
+      <button id="reset" class="secondary">Reset to default</button>
+      <span id="status" role="status"></span>
+    </footer>
+  </section>
+
+  <script src="js/permissions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
