@@ -1,37 +1,28 @@
 {
-  "name": "ThemeManager",
+  "name": "ThemeManager Test",
   "description": "Change the fonts, wallpaper and icons of Firefox OS from one place.",
   "version": "1.0.0",
-  "type": "certified",
+  "type": "privileged",
   "launch_path": "/index.html",
   "default_locale": "en",
-  "orientation": ["portrait-primary"],
-  "developer": { "name": "ThemeManager" },
+  "orientation": [
+    "portrait-primary"
+  ],
+  "developer": {
+    "name": "ThemeManager"
+  },
   "icons": {
     "60": "/icons/app-60.png",
     "128": "/icons/app-128.png"
   },
   "permissions": {
-    "settings": {
-      "description": "Apply wallpaper, font and icon choices to the system",
-      "access": "readwrite"
-    },
-    "themeable": {
-      "description": "Allow ThemeManager to restyle system UI"
-    },
-    "permissions": {
-      "description": "Check and manage the permissions this app needs"
-    },
-    "webapps-manage": {
-      "description": "Read installed apps so their icons can be themed"
-    },
     "device-storage:pictures": {
       "description": "Read wallpapers from the pictures folder",
-      "access": "readwrite"
+      "access": "readonly"
     },
     "device-storage:sdcard": {
       "description": "Read custom fonts and icon packs",
-      "access": "readwrite"
+      "access": "readonly"
     }
   }
 }
