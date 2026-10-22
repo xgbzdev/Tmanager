@@ -1,5 +1,5 @@
 {
-  "name": "ThemeManager Test",
+  "name": "ThemeManager",
   "description": "Change the fonts, wallpaper and icons of Firefox OS from one place.",
   "version": "1.0.0",
   "type": "privileged",
